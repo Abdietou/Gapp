@@ -1,12 +1,18 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+ <ion-card>
+   <ion-card-header class="myCardHeader">Contact</ion-card-header>
+   <ion-card-content padding="">
+     <p>Nom: <strong>{{contact.nom}}</strong></p>
+     <p>Email: <strong>{{contact.email}}</strong></p>
+     <img src="{{contact.photo}}">
+   </ion-card-content>
+ </ion-card>
 </ion-content>
